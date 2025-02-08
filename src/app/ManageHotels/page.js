@@ -2,7 +2,7 @@ import ManageHotelsClient from "../components/ManageHotelsClient/ManageHotelsCli
 
 const ManageHotelsPage = async () => {
     try {
-        const res = await fetch("https://hostel-management-server-kappa.vercel.app/hotels", { cache: "no-store" });
+        const res = await fetch("http://localhost:5000/hotels", { cache: "no-store" });
         if (!res.ok) throw new Error("Failed to fetch hotels");
         const hotelsData = await res.json();
 

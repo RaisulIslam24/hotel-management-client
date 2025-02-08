@@ -17,7 +17,7 @@ const AddHotel = () => {
 
     useEffect(() => {
         if (hotelId) {
-            fetch(`https://hostel-management-server-kappa.vercel.app/hotelDetails/${hotelId}`)
+            fetch(`http://localhost:5000/hotelDetails/${hotelId}`)
                 .then(res => res.json())
                 .then(data => {
                     setValue("property_name", data.property_name);
@@ -57,12 +57,12 @@ const AddHotel = () => {
 
         try {
             const response = hotelId
-                ? await fetch(`https://hostel-management-server-kappa.vercel.app/updateHotel/${hotelId}`, {
+                ? await fetch(`http://localhost:5000/updateHotel/${hotelId}`, {
                     method: 'PUT',
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify(newObject),
                 })
-                : await fetch('https://hostel-management-server-kappa.vercel.app/addHotel', {
+                : await fetch('http://localhost:5000/addHotel', {
                     method: 'POST',
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify(newObject),

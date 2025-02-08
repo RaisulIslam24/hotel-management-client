@@ -2,7 +2,7 @@ import Header from "@/app/components/Header/Header";
 import SocialShare from "@/app/components/SocialShare/SocialShare";
 
 async function getHotelData(id) {
-  const res = await fetch(`https://hostel-management-server-kappa.vercel.app/hotelDetails/${id}`, {
+  const res = await fetch(`http://localhost:5000/hotelDetails/${id}`, {
     cache: "no-store",
   });
 

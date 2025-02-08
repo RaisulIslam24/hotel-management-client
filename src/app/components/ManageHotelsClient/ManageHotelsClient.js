@@ -31,7 +31,7 @@ const ManageHotelsClient = ({ hotelsData }) => {
         }).then(async (result) => {
             if (result.isConfirmed) {
                 try {
-                    const res = await fetch(`https://hostel-management-server-kappa.vercel.app/deleteHotel/${id}`, {
+                    const res = await fetch(`http://localhost:5000/deleteHotel/${id}`, {
                         method: "DELETE",
                     });
 
