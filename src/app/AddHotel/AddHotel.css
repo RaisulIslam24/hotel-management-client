@@ -1,0 +1,69 @@
+.addHotel {
+	display: flex;
+  }
+  .addHotelForm {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 80px;
+  }
+  
+  .hotelUpdateIconRed {
+	cursor: pointer;
+	font-size: 24px !important;
+  }
+  .hotelUpdateIconGreen {
+	color: green;
+	cursor: pointer;
+	font-size: 24px !important;
+  }
+  
+  .addHotelItem {
+	width: 400px;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
+  }
+  
+  .addHotelItem > label > span {
+	margin-right: 20px;
+  }
+  
+  .addHotelItem > label {
+	font-weight: 600;
+	margin-bottom: 10px;
+  }
+  
+  .addHotelItem > input {
+	padding: 10px;
+  }
+  
+  .addHotelItem > select {
+	padding: 10px;
+  }
+  
+  .addHotelButton {
+	margin-top: 10px;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 10px;
+	background-color: darkblue;
+	color: white;
+	font-weight: 600;
+	cursor: pointer;
+  }
+  
+  
+  @media only screen and (max-width: 600px) {
+	.addHotel {
+	  display: flex;
+	  flex-direction: column;
+	}
+	.addHotelItem {
+	  max-width: 400px;
+	  display: flex;
+	  flex-direction: column;
+	  margin-bottom: 10px;
+	}
+  }
